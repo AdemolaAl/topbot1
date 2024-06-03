@@ -1,0 +1,165 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins";
+  color: #464646;
+}
+
+.button1, .button2 {
+  font-family: unset;
+  height: 40px;
+  border-radius: 40px;
+  background-color: white;
+  border: 0;
+  padding: 0 20px;
+}
+
+.button2 {
+  background: var(--Bluwigo, #0D4FF7);
+  color: white;
+}
+
+header {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  width: 100px;
+  top: 5.88px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.input-main {
+  max-width: 100%;
+  margin: 20px 0;
+}
+.input-main p {
+  margin: 5px 0;
+  font-size: 13px;
+}
+.input-main input, .input-main textarea {
+  padding: 8px; /* Padding applied to top and bottom */
+  padding-left: 10px; /* Additional padding to the left */
+  padding-right: 10px; /* Additional padding to the right */
+  width: calc(100% - 20px); /* Subtracting the total additional padding from the width */
+  max-width: 100%;
+  border: 1px solid #CAD0DB;
+  font-size: 12px;
+  border-radius: 5px;
+  outline: none;
+  font-family: "poppins";
+  background-color: white;
+}
+
+.input-main input:focus,
+.input-main textarea:focus, select:focus {
+  outline: 2px solid #4F46E5; /* Change the outline color when focused */
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  margin-top: 50px;
+}
+.main .left {
+  color: #373a47;
+  width: 48%;
+}
+.main .left .h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.main .left .h2 {
+  font-size: 16px;
+}
+.main .left .texts {
+  font-size: 14px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgb(223, 223, 223);
+}
+.main .left .texts ul {
+  margin-left: -15px;
+  margin-top: 0;
+}
+.main .left .texts ul li {
+  margin-bottom: 20px;
+}
+.main .right {
+  width: 48%;
+}
+.main .right form {
+  margin-left: 30px;
+  padding: 40px 20px 20px 20px;
+  width: 80%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+.main .right form button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.speakers {
+  padding: 20px;
+  margin-top: 100px;
+  background-color: #f2f4f5;
+}
+.speakers .center {
+  text-align: center;
+}
+.speakers .h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.speakers .cvrr {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+.speakers .cvr {
+  width: 250px;
+  text-align: center;
+}
+.speakers .cvr img {
+  border-radius: 100%;
+}
+.speakers .cvr .name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin: 50px 0;
+}
+
+@media only screen and (max-width: 820px) {
+  .main {
+    display: block;
+  }
+  .main .left {
+    width: unset;
+  }
+  .main .right {
+    width: unset;
+  }
+  .main .right form {
+    margin: auto;
+    margin-top: 30px;
+  }
+  .speakers .cvrr {
+    display: block;
+  }
+  .speakers .cvrr .cvr {
+    margin: auto;
+    margin-top: 40px;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -184,7 +184,7 @@ select:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 150px 50px;
+    margin: 100px 50px;
 
     .right {
         width: 45%;
@@ -386,7 +386,7 @@ footer {
     }
 
     .main {
-        width: 80%;
+        width: 90%;
         margin: auto;
         text-align: center;
         color: black;
@@ -396,11 +396,11 @@ footer {
     
         h1 {
             font-size: 30px;
-            margin-bottom: 0;
+            margin-bottom: 10px;
         }
     
         .p1 {
-            font-size: 13px;
+            font-size: 11px;
             width: 80%;
             margin: auto;
         }

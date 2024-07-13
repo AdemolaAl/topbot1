@@ -47,12 +47,10 @@ const contactFormSchema = zod.object({
     name: zod.string(),
     email: zod.string().email(),
     phone: zod.string(),
-    afford2: zod.string(),
-    broker: zod.string(),
-    brkname: zod.string(),
-    afford: zod.string(),
-    needsCall : zod.string(),
-    phone2 :zod.string(),
+    ready: zod.string(),
+    social: zod.string(),
+    program: zod.string(),
+    
 });
 
 

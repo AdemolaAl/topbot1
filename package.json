@@ -4,12 +4,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node index.js"
+    "start": "node index.js"
   },
   "author": "Ademola AL-ameen",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "express": "^4.19.2",
     "googleapis": "^137.1.0",
     "nodemailer": "^6.9.13",
     "serve-favicon": "^2.5.0",

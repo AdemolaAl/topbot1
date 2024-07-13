@@ -5,6 +5,14 @@ body {
     color: #464646;
 }
 
+html {
+    scroll-behavior: smooth;
+    /* Enable smooth scrolling behavior */
+}
+
+a {
+    text-decoration: none;
+}
 
 .button1 {
     font-family: unset;
@@ -17,8 +25,15 @@ body {
 
 .button2 {
     @extend .button1;
-    background: var(--Bluwigo, #0D4FF7);
+    background: var(--Bluwigo, #be9675);
     color: white;
+}
+
+.button3 {
+    @extend .button2;
+    height: 60px;
+    font-size: 20px;
+    padding: 0 50px;
 }
 
 header {
@@ -28,7 +43,7 @@ header {
     justify-content: space-between;
 
     img {
-        width: 100px;
+        width: 200px;
         top: 5.88px;
         gap: 0px;
         opacity: 0px;
@@ -36,19 +51,46 @@ header {
 
 }
 
+.div2 {
+    display: none;
+}
+
+
+.p11 {
+    font-size: 22px;
+    font-weight: bold;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+}
+
+.p22 {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
 .input-main {
     max-width: 100%;
     margin: 20px 0;
+
     p {
         margin: 5px 0;
         font-size: 13px;
     }
 
-    input,  textarea {
-        padding: 8px; /* Padding applied to top and bottom */
-        padding-left: 10px; /* Additional padding to the left */
-        padding-right: 10px; /* Additional padding to the right */
-        width: calc(100% - 20px); /* Subtracting the total additional padding from the width */
+    input,
+    textarea {
+        padding: 8px;
+        /* Padding applied to top and bottom */
+        padding-left: 10px;
+        /* Additional padding to the left */
+        padding-right: 10px;
+        /* Additional padding to the right */
+        width: calc(100% - 20px);
+        /* Subtracting the total additional padding from the width */
         max-width: 100%;
         border: 1px solid #CAD0DB;
         font-size: 12px;
@@ -58,106 +100,373 @@ header {
         background-color: white;
     }
 
+    select {
+        padding: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: "poppins";
+        font-size: 12px;
+        border: 1px solid #CAD0DB;
+        border-radius: 5px;
+        appearance: none;
+        /* Remove default appearance */
+        -webkit-appearance: none;
+        /* Remove default appearance for Safari */
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="%23333"><path d="M7 10l5 5 5-5z"/></svg>');
+        /* Add custom arrow icon */
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 20px 20px;
+        cursor: pointer;
+        background-color: white;
+        width: 100%;
+        outline: none;
+    }
+
+    /* Style the options */
+    select option {
+        padding: 10px;
+        font-size: 13px;
+        font-family: "poppins";
+
+    }
+
 }
 
 .input-main input:focus,
-.input-main textarea:focus , select:focus{
-    outline:2px solid #4F46E5; /* Change the outline color when focused */
+textarea:focus,
+select:focus {
+    outline: 2px solid #4F46E5;
+    /* Change the outline color when focused */
+}
+
+.headpiccvr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.headpic {
+    margin: auto;
+    max-width: 100%;
+    margin-bottom: 30px;
 }
 
 
+.main {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: black;
+    margin: 40px auto;
+    margin-top: 100px;
+    height: 50vh;
 
-.main{
+    h1 {
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+
+    .p1 {
+        font-size: 15px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .button2 {
+        margin-top: 20px;
+        padding: 0 30px;
+    }
+}
+
+.flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
-    margin-top: 50px;
+    margin: 150px 50px;
 
-    .left{
-        .h1{font-size: 25px; font-weight: bold; margin-bottom: 20px;}
-        .h2{font-size: 16px;}
-        color: #373a47;
-        width: 48%;
-        .texts{
-            font-size: 14px;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid rgb(223, 223, 223);
-            ul{
-                margin-left: -15px;
-                margin-top: 0;
-                li{margin-bottom: 20px;}
-            }
+    .right {
+        width: 45%;
+
+        .p1 {
+            font-size: 40px;
+            font-weight: bold;
         }
+
+        .p2 {
+            font-weight: bold;
+            margin: 10px 0 40px 0;
+        }
+
+        .p3 {
+            font-size: 15px;
+        }
+
+        .button2 {
+            margin-top: 20px;
+        }
+
     }
-    .right{
-        width: 48%;
-        form{
-            margin-left: 30px;
-            padding:40px 20px 20px 20px;
-            width:80%;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            border-radius: 10px;
-            button{
-                width: 100%;
-                margin-top: 20px;
-            }
+
+    .left {
+        width: 47%;
+
+        img {
+            width: 500px;
         }
     }
 }
 
-.speakers{
-    padding: 20px;
-    margin-top: 100px;
-    background-color: #f2f4f5;
-    .center{text-align: center;}
-    .h1{font-size: 30px; font-weight: bold;}
-    .cvrr{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 20px 0;
-    }
-    .cvr{
-        width: 250px;
+#contactForm {
+    width: 70%;
+    margin: auto;
+
+    .reg {
+        font-size: 35px;
+        font-weight: bold;
         text-align: center;
-        img{
-            border-radius: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .label {
+        display: inline-flex;
+        align-items: center;
+        font-size: 12px;
+        margin-right: 10px;
+        max-width: 100%;
+
+        .checkbox-container {
+            display: inline-flex;
+            align-items: center;
         }
-        .name{
-            font-size: 25px;
-            font-weight: bold;
+
+        .custom-checkbox {
+            width: 55px;
+            /* Adjust the width to your desired size */
+            height: 20px;
+            /* Adjust the height to your desired size */
+            appearance: none;
+            /* Remove default styling */
+            background-color: #ccc;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+        }
+
+        .custom-checkbox:checked {
+            background-color: #4c5eaf;
+            /* Change the background color when checked */
+            border-color: #4c5eaf;
+        }
+
+        .custom-checkbox:checked::after {
+            content: "";
+            position: absolute;
+            top: 3px;
+            /* Adjust the top position to center the checkmark */
+            left: 5px;
+            /* Adjust the left position to center the checkmark */
+            width: 3px;
+            height: 6px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+
+        .checkbox-label {
+            margin-left: 10px;
+            /* Add some space between the checkbox and the label text */
+            cursor: pointer;
+        }
+
+        margin-bottom: 50px;
+    }
+
+    .phone-input-container {
+        display: flex;
+        align-items: center;
+
+        select {
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            padding: 10px;
+            font-size: 14px;
+            max-width: 150px;
+            outline: none;
+            appearance: none;
+            /* Remove default styling in some browsers */
+        }
+
+        input[type="tel"] {
+            border: 1px solid #ccc;
+            border-left: none;
+            border-radius: 0 5px 5px 0;
+            padding: 10px;
+            font-size: 12px;
+
+            outline: none;
+            flex: 1;
+        }
+
+        input[type="tel"]::placeholder {
+            color: #aaa;
+        }
+
+        input:focus {
+            outline: 2px solid #4F46E5
         }
     }
+
+}
+
+.disclaimer {
+    width: 60%;
+    
+    margin: auto;
+    font-size: 13px;
+    img{
+        text-align: center;
+    }
+    margin-top: 50px;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    margin: 50px 0;
+    padding-bottom: 30px;
     
 }
 
 
-footer{
-    text-align: center;
-    margin: 50px 0;
-}
 
-@media only screen and (max-width:820px){
-    .main{
+
+
+
+@media only screen and (max-width:820px) {
+    header {
+        padding: 20px;
+    }
+
+    .time {
+        margin: 40px 20px 0px 20px;
+    }
+
+    .p22 {
+        width: unset;
+        font-size: 14px;
+    }
+
+    .p11 {
+        font-size: 16px;
+    }
+
+    .div2 {
         display: block;
-        .left{width: unset;}
-        .right{
+        display: flex;
+        justify-content: center;
+        margin: -50px 0 50px 0;
+    }
+
+    .headpic {
+
+        max-width: 90%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .main {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        color: black;
+        margin: 40px auto;
+        margin-top: 100px;
+        height: 50vh;
+    
+        h1 {
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+    
+        .p1 {
+            font-size: 13px;
+            width: 80%;
+            margin: auto;
+        }
+    
+        .button2 {
+            margin-top: 20px;
+            padding: 0 30px;
+        }
+    }
+    
+    .flex {
+        display: block;
+        margin: 150px 20px;
+    
+        .right {
             width: unset;
-            form{
-                margin: auto;
-                margin-top: 30px
+    
+            .p1 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+    
+            .p2 {
+                font-weight: bold;
+                margin: 10px 0 15px 0;
+            }
+    
+            .p3 {
+                font-size: 15px;
+            }
+    
+            .button2 {
+                margin: 20px 0;
+            }
+    
+        }
+    
+        .left {
+            width: unset;
+    
+            img {
+                width: 300px;
             }
         }
     }
-    .speakers{
-        .cvrr{
-            display: block;
-            .cvr{
-                margin: auto;
-                margin-top: 40px;
-            }
+
+    #contactForm {
+        width: unset;
+        margin: 20px ;
+        .reg {
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
         }
+
     }
+    
+    .disclaimer {
+        width: unset;
+        
+        margin: 20px 20px;
+        font-size: 13px;
+        img{
+            text-align: center;
+        }
+        margin-top: 50px;
+    }
+
 }
